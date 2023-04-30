@@ -10,7 +10,13 @@ console.log(match);
   return (
     <div>
       <MoviesList movies={movies} />
+    
+
+    <Route path={`${match.url}/:movieId`}>
+      <MovieShow />
+    </Route>
     </div>
+
   );
 }
 export default MoviesPage;
